@@ -21,7 +21,7 @@ byte customChar[8] = {  // a superscript 2 (since my LCD has Asian chars and no 
 
 void setup() {
   pinMode(LED1_PIN, OUTPUT);
-  pinMode(rescanPIN, INPUT_PULLUP); // used to reset / restart prg
+  pinMode(rescanPIN, INPUT_PULLUP); // used to rescan / flip pages
   TinyWireM.begin();                // initialize I2C lib
   lcd.init();                       // initialize the lcd
   lcd.backlight();                  // on, noBackLight turns it off
@@ -40,7 +40,7 @@ void flashBackLight(int count2) {
 void loop() {       // ad infinitum
   lcd.clear();
   lcd.print ("I");                // Print a message to the LCD.
-//  lcd.print((char)0xB2);          // crap, mine has asian 2nd character set, no superscript2  YDMD
+//  lcd.print((char)0xB2);          // crap, mine has asian 2nd character set, no superscript2  YDMV
   lcd.print((uint8_t)0);          // planB, draw a superscript 2 in custom char RAM, location 0 and display it with this line
 //  lcd.print ("2");                // Print a regular 2 if nothing else works
   lcd.print ("C scanning ....");  // Print rest of message to the LCD.
@@ -50,7 +50,7 @@ void loop() {       // ad infinitum
   lcd.clear();
   byte count = 0;
   int lcdLine = 0;
-  for (byte i = 0x08; i < 0x78; i++)  {           // test every possible I2C address
+  for (byte i = 0x08; i < 0x79; i++)  {           // test every possible I2C address
     TinyWireM.beginTransmission (i);
     if (TinyWireM.endTransmission () == 0)  {     // if it replies, it exists
       if (lcdLine == LCDlines) {                  // test which LCD line we are on
