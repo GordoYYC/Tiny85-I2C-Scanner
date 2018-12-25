@@ -7,7 +7,7 @@ Written for a AT Tiny85 but easily adapted to Arduinos, etc., but should hopeful
 
 The main thing I had difficulty with was getting a standard LCD (with backpack I2C adaptor) working with the Tiny, as I had to find a suitable library that would fit in and work with the tiny (in the future I'll be able to write my own libraries, but gotta walk before I run).  Many Thanks to BroHogan and his predecessors for the libraries!
 
-This little sketch has some other good beginner topics such as:
+It's certainly not the smallest or the shortest sketch, but looks nice and I hope readable.  It has some other good beginner topics such as:
 - generating a custom character for the LCD and displaying it
 - a "hit any key to continue" loop
 - basic formatting when you don't have access to a 'printf' type function
