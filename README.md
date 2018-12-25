@@ -1,7 +1,7 @@
 # Tiny85-I2C-Scanner
 *Beginner* project to scan I2C bus and report on LCD (also I2C) all the I2C addresses found (including the LCD's).
 
-*Beginners:* Make a directory, load all these and only these files into it.  Open the Arduino IDE and load in support for the ATtiny's (google it).  Then open this .ino file and burn it.  It works.
+*Beginners:* Make a directory, load all these and only these files into it.  Open the Arduino IDE and load in support for the ATtiny 85's (google it).  Then open this .ino file and burn it.  It works.
 
 There is a pushbutton to quickly rescan, so you can pull a I2C wire from modules and rescan and see what changed and thus identify which module is which address.  This same pushbutton will need to be pushed each time the number of found I2C addresses exceed the screen lines  to see the next set of addresses.  I've used it for 1 to 5 addresses, it should cover them all.
 
