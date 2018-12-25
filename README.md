@@ -16,4 +16,4 @@ It's certainly not the smallest or the shortest sketch, but looks nice and I hop
 - setting up a screen size define that is used to init LCD and to control program prints to LCD (lines and cols)
 - my first git
 
-![.](https://raw.githubusercontent.com/username/projectname/branch/path/to/I2C-Scanner_bb.jpg)
+![.](https://raw.githubusercontent.com/GordoYYC/Tiny85-I2C-Scanner/master/I2C-Scanner_bb.jpg)
