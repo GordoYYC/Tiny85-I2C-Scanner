@@ -15,3 +15,5 @@ It's certainly not the smallest or the shortest sketch, but looks nice and I hop
 - basic formatting when you don't have access to a 'printf' type function
 - setting up a screen size define that is used to init LCD and to control program prints to LCD (lines and cols)
 - my first git
+
+![.](https://raw.githubusercontent.com/username/projectname/branch/path/to/I2C-Scanner_bb.jpg)
